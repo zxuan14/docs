@@ -57,3 +57,43 @@ topics:
 - "[Managing access to your organization's repositories](/articles/managing-access-to-your-organization-s-repositories)"
 - [Open Source Guides](https://opensource.guide/){% ifversion fpt or ghec %}
 - [{% data variables.product.prodname_learning %}]({% data variables.product.prodname_learning_link %}){% endif %}
+
+$ curl -i https://api.github.com/users/defunkt
+
+> HTTP/2 200
+> server: GitHub.com
+> date: Thu, 08 Jul 2021 07:04:08 GMT
+> content-type: application/json; charset=utf-8
+> cache-control: public, max-age=60, s-maxage=60
+> vary: Accept, Accept-Encoding, Accept, X-Requested-With
+> etag: W/"61e964bf6efa3bc3f9e8549e56d4db6e0911d8fa20fcd8ab9d88f13d513f26f0"
+> last-modified: Fri, 01 Nov 2019 21:56:00 GMT
+> x-github-media-type: github.v3; format=json
+> access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+> access-control-allow-origin: *
+> strict-transport-security: max-age=31536000; includeSubdomains; preload
+> x-frame-options: deny
+> x-content-type-options: nosniff
+> x-xss-protection: 0
+> referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+> content-security-policy: default-src 'none'
+> x-ratelimit-limit: 60
+> x-ratelimit-remaining: 53
+> x-ratelimit-reset: 1625731053
+> x-ratelimit-resource: core
+> x-ratelimit-used: 7
+> accept-ranges: bytes
+> content-length: 1305
+> x-github-request-id: 9F60:7019:ACC5CD5:B03C931:60E6A368
+>
+> {
+>  "login": "defunkt",
+>  "id": 2,
+>  "node_id": "MDQ6VXNlcjI=",
+>  "avatar_url": "https://avatars.githubusercontent.com/u/2?v=4",
+>  "gravatar_id": "",
+>  "url": "https://api.github.com/users/defunkt",
+>  "html_url": "https://github.com/defunkt",
+>
+>   ...
+> }
